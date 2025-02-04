@@ -51,7 +51,7 @@ export default function TabTwoScreen() {
       setIsLoading(true);
 
       try {
-        const newPredictions = await getPredictions(newText.trim(),3);
+        const newPredictions = await getPredictions(newText.trim(),10);
         setPredictions(newPredictions);
       } catch (error) {
         console.error('Error getting predictions:', error);
